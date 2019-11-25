@@ -14,7 +14,7 @@ class NewtonPainter(var plane:CartesianScreenPlane,var p:Newton) {
         for (i in 0..plane.realWidth) {
             val y1 = Converter.yCrt2Scr(p.getValue(Converter.xScr2Crt(i, plane)),plane)
             val y2 = Converter.yCrt2Scr(p.getValue(Converter.xScr2Crt(i+1, plane)),plane)
-            g.drawLine(i,y1,i+1,y2)//линия по двум точкам все пиксели в координаты X
+            g.drawLine(i,y1,i+1,y2)         //линия по двум точкам все пиксели в координаты X
         }
     }
 

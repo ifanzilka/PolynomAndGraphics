@@ -17,7 +17,7 @@ class DecartPainter(var plane: CartesianScreenPlane){
         g.drawLine(x0, 0, x0, plane.realHeight)
 
     }
-    private fun PaintTicks(g:Graphics){
+    private fun PaintTicks(g:Graphics){             //Черточки
         val x0 = Converter.xCrt2Scr(0.0, plane)
         val y0 = Converter.yCrt2Scr(0.0, plane)
         for (i in  (plane.xMin*10).toInt()..(plane.xMax*10).toInt()) {

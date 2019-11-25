@@ -45,7 +45,7 @@ class Newton( var valx: ArrayList<Double>, var valy: ArrayList<Double>):Polynom(
         }
     }
 
-    private fun getTermF(begin:Int,end:Int): Double {
+    private fun getTermF(begin:Int,end:Int): Double { //Получаем f(x1,x_k)
         if (begin == end) {
             termsF[Pair(begin,begin)]=valy[begin]
             return valy[begin]
